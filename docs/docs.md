@@ -25,7 +25,7 @@ Error:
 {
   status: 400,
   error: {
-    message: "Internal server error"
+    message: "Internal server error"w
   }
 }
 ```
@@ -34,7 +34,7 @@ contoh request
 endpoint: api/chat
 
 ```JSON
-const response = fetch("https://example.api.com/api/test?key=your_api_key", {
+const response = fetch("https://groqapi-eta.vercel.app/api/chat?key=your_api_key", {
   headers: {
     method: "POST",
     headers: {

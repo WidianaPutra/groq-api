@@ -6,7 +6,7 @@ import { rateLimitConfig } from "./config/rateLimit.js";
 import { middleware } from "./config/middleware.js";
 
 // controller
-import ai from "./controllers/ai.js";
+import chat from "./controllers/chat.js";
 
 dotenv.config();
 
@@ -17,7 +17,7 @@ app.use(
   rateLimitConfig
 );
 
-app.post("/api/chat", middleware, ai);
+app.post("/api/chat", middleware, chat);
 
 app.listen(process.env.PORT, () =>
   console.log(`server up and runing on port ${process.env.PORT}`)
